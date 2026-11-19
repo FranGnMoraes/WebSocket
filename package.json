@@ -1,0 +1,22 @@
+{
+  "name": "redezap",
+  "version": "1.0.0",
+  "description": "Chat estilo WhatsApp com Sockets: privado por TCP (cliente a cliente) e grupo por UDP (via servidor). Redes de Computadores - AV3 - IFRS Rio Grande.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "servidor": "node src/servidor.ts",
+    "cliente": "node src/cliente.ts",
+    "verificar": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "servidor:js": "node dist/servidor.js",
+    "cliente:js": "node dist/cliente.js"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
